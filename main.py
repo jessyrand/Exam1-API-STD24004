@@ -3,7 +3,7 @@ from starlette.responses import Response
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/hello")
 def root():
     with open("hello.html", "r", encoding="utf-8") as file:
         html_content = file.read()
